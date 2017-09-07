@@ -393,9 +393,9 @@ var locateControl = L.control.locate({
   icon: "fa fa-location-arrow",
   metric: false,
   strings: {
-    title: "My location",
-    popup: "You are within {distance} {unit} from this point",
-    outsideMapBoundsMsg: "You seem located outside the boundaries of the map"
+    title: "Mi ubicacion",
+    popup: "Estas a {distance} {unit} de este lugar",
+    outsideMapBoundsMsg: "Parece que te encuentras fuera de los limites el mapa"
   },
   locateOptions: {
     maxZoom: 18,
