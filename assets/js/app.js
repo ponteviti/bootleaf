@@ -123,7 +123,7 @@ var cartoLight = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net
 });
 var usgsImagery = L.layerGroup([L.tileLayer("http://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}", {
   maxZoom: 15,
-}), L.tileLayer.wms("http://www.ign.es/wms-inspire/pnoa-ma?service=WMS&request=getCapabilities", {
+}), L.tileLayer.wms("contextualWMSLegend=0&crs=EPSG:4326&dpiMode=7&featureCount=10&format=image/jpeg&layers=OI.OrthoimageCoverage&styles=default&tileMatrixSet=EPSG:4326&url=http://www.ign.es/wmts/pnoa-ma?request%3DGetCapabilities%26service%3DWMTS", {
     /*http://raster.nationalmap.gov/arcgis/services/Orthoimagery/USGS_EROS_Ortho_SCALE/ImageServer/WMSServer?*/
   minZoom: 16,
   maxZoom: 19,
