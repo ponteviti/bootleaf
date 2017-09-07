@@ -123,14 +123,14 @@ var cartoLight = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net
 });
 var usgsImagery = L.layerGroup([L.tileLayer("http://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}", {
   maxZoom: 15,
-}), L.tileLayer.wms("contextualWMSLegend=0&crs=EPSG:4326&dpiMode=7&featureCount=10&format=image/jpeg&layers=OI.OrthoimageCoverage&styles=default&tileMatrixSet=EPSG:4326&url=http://www.ign.es/wmts/pnoa-ma?request%3DGetCapabilities%26service%3DWMTS", {
+}), L.tileLayer.wms("http://www.ign.es/wmts/pnoa-ma", {
     /*http://raster.nationalmap.gov/arcgis/services/Orthoimagery/USGS_EROS_Ortho_SCALE/ImageServer/WMSServer?*/
   minZoom: 16,
   maxZoom: 19,
   layers: "0",
-  format: 'image/jpeg',
+  format: 'image/png',
   transparent: true,
-  attribution: "PNOA cortes&iacute;a del IGN"
+  attribution: "PNOA cedido por © <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>"
 })]);
 
 /* Overlay Layers */
