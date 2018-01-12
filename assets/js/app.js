@@ -153,7 +153,7 @@ var boroughs = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     boroughSearch.push({
       name: layer.feature.properties.BoroName,
-      source: "Boroughs_",
+      source: "Boroughs",
       id: L.stamp(layer),
       bounds: layer.getBounds()
     });
